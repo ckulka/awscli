@@ -1,5 +1,5 @@
 # Set the base image
-FROM hypriot/rpi-python
+FROM python:2
 
 # File Author / Maintainer
 MAINTAINER Cyrill Kulka
