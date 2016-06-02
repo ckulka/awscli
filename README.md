@@ -5,7 +5,7 @@ For more details, see https://github.com/ckulka/rpi-awscli
 ### Image Variants
 
  - ```ckulka/awscli:latest``` uses ```python:2``` as base image
- - ```ckulka/awscli:alpine``` uses ````python:2-alpine``` as base image
+ - ```ckulka/awscli:alpine``` uses ```python:2-alpine``` as base image
 
 ### Backup to AWS S3
 Sample docker-compose file: docker-compose.example.yml
