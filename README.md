@@ -12,15 +12,15 @@ For more details, see https://github.com/ckulka/awscli
 
 ## Image Variants
 
-###ckulka/awscli:latest
+### ```ckulka/awscli:latest```
 
 This images is based on ```python:2``` and adds the AWS Cli.
 
-###ckulka/awscli:alpine
+### ```ckulka/awscli:alpine```
 
 This image is based on ```python:2-alpine``` and adds the AWS Cli.
 
-###ckulka/awscli:zsh
+### ```ckulka/awscli:zsh```
 
 This image is based on ```ckulka/awscli:latest``` and adds ZSH & nano.
 
