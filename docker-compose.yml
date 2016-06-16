@@ -1,0 +1,38 @@
+version: '2'
+
+# To start a container and a configured AWS Cli, update
+# the environment variables below and run docker-compose:
+#
+# docker-compose run --rm zsh
+# docker-compose run --rm alpine aws configure list
+# docker-compose run --rm cli aws configure list
+
+
+services:
+  zsh:
+    image: ckulka/awscli:zsh
+    build:
+      context: .
+      dockerfile: Dockerfile.zsh
+    environment:
+      - AWS_ACCESS_KEY_ID=my-access-key-id
+      - AWS_SECRET_ACCESS_KEY=my-access-key-secret
+      - AWS_DEFAULT_REGION=eu-central-1
+
+  cli:
+    image: ckulka/awscli:latest
+    build: .
+    environment:
+      - AWS_ACCESS_KEY_ID=my-access-key-id
+      - AWS_SECRET_ACCESS_KEY=my-access-key-secret
+      - AWS_DEFAULT_REGION=eu-central-1
+
+  alpine:
+    image: ckulka/awscli:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.alpine
+    environment:
+      - AWS_ACCESS_KEY_ID=my-access-key-id
+      - AWS_SECRET_ACCESS_KEY=my-access-key-secret
+      - AWS_DEFAULT_REGION=eu-central-1

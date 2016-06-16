@@ -1,13 +1,31 @@
 This repository provides an image for the AWS Cli.
 
-For more details, see https://github.com/ckulka/rpi-awscli
 
-### Image Variants
+## Supported tags
 
  - ```ckulka/awscli:latest``` uses ```python:2``` as base image
  - ```ckulka/awscli:alpine``` uses ```python:2-alpine``` as base image
  - ```ckulka/awscli:zsh``` uses ```ckulka:awscli``` as base image and additionally provides ZSH
 
+For more details, see https://github.com/ckulka/awscli
+
+
+## Image Variants
+
+###```ckulka/awscli:latest```
+
+This images is based on ```python:2``` and adds the AWS Cli.
+
+###```ckulka/awscli:alpine```
+
+This image is based on ```python:2-alpine``` and adds the AWS Cli.
+
+###```ckulka/awscli:zsh```
+
+This image is based on ```ckulka/awscli:latest``` and adds ZSH & nano.
+
+
+## Examples
 ### Backup to AWS S3
 Sample docker-compose file: docker-compose.example.yml
 
