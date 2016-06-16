@@ -3,14 +3,26 @@ This repository provides an image for the AWS Cli.
 
 ## Supported tags
 
- - ```ckulka/awscli:latest``` uses ```python:2``` as base image
- - ```ckulka/awscli:alpine``` uses ```python:2-alpine``` as base image
- - ```ckulka/awscli:zsh``` uses ```ckulka:awscli``` as base image and additionally provides ZSH
+ - ```latest``` [(Dockerfile)](https://github.com/ckulka/awscli/blob/master/Dockerfile)
+ - ```alpine``` [(Dockerfile)](https://github.com/ckulka/awscli/blob/master/Dockerfile.alpine)
+ - ```zsh``` [(Dockerfile)](https://github.com/ckulka/awscli/blob/master/Dockerfile.zsh)
 
 For more details, see https://github.com/ckulka/awscli
 
 
 ## Image Variants
+
+To build or try any of the image variants yourself, have a look at the git repository and use the ```docker-compose.yml```.
+```
+docker-compose build zsh
+docker-compose run --rm zsh
+
+docker-compose build cli
+docker-compose run --rm cli aws configure list
+
+docker-compose build alpine
+docker-compose run --rm alpine aws configure list
+```
 
 ###```ckulka/awscli:latest```
 
