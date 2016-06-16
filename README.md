@@ -12,18 +12,6 @@ For more details, see https://github.com/ckulka/awscli
 
 ## Image Variants
 
-To build or try any of the image variants yourself, have a look at the git repository and use the ```docker-compose.yml```.
-```
-docker-compose build zsh
-docker-compose run --rm zsh
-
-docker-compose build cli
-docker-compose run --rm cli aws configure list
-
-docker-compose build alpine
-docker-compose run --rm alpine aws configure list
-```
-
 ###```ckulka/awscli:latest```
 
 This images is based on ```python:2``` and adds the AWS Cli.
@@ -38,6 +26,20 @@ This image is based on ```ckulka/awscli:latest``` and adds ZSH & nano.
 
 
 ## Examples
+
+To build or try any of the image variants yourself, have a look at the git repository and use the ```docker-compose.yml```.
+
+```
+docker-compose build zsh
+docker-compose run --rm zsh
+
+docker-compose build cli
+docker-compose run --rm cli aws configure list
+
+docker-compose build alpine
+docker-compose run --rm alpine aws configure list
+```
+
 ### Backup to AWS S3
 Sample docker-compose file: docker-compose.example.yml
 
