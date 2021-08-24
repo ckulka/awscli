@@ -1,3 +1,9 @@
+# Deprecation notice
+
+This image is deprecated in favor of the [official AWS Docker image `amazon/aws-cli`](https://hub.docker.com/r/amazon/aws-cli). For more details, see [Using the official AWS CLI version 2 Docker image](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-docker.html).
+
+# awscli
+
 This repository provides an image for the AWS Cli.
 
 
